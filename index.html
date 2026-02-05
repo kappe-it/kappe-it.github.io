@@ -1,12 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>turt fansite</title>
+  <title>turt fansite</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    .main {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      padding: 0 1rem;
+    }
+    .content {
+      flex: 1;
+    }
+    .side-img {
+      width: 300px;
+      height: 350px;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+    @media (max-width: 600px) {
+      .main { flex-direction: column; }
+      .side-img { width: 100%; height: auto; max-height: 400px; }
+    }
+  </style>
 </head>
 <body>
-<h1>Hello, gais this is turt the hat wearing turtle</h1>
-<p>This is turts website and his alone.</p>        <img src="https://i.ebayimg.com/images/g/VB8AAOSw~kFfy~Pe/s-l1200.jpg alt="turt" style="width:500px;height:600px;">
-<p>buy me food.</p>
-<a href="https://www.amazon.com/turtle-food-Pet-Supplies/s?k=turtle+food&rh=n%3A2619533011">food link </a>
+  <h1>Hello, gais this is turt the hat wearing turtle</h1>
+
+  <div class="main">
+    <div class="content">
+      <p>This is turts website and his alone.</p>
+      <p>buy me food.</p>
+      <a href="https://www.amazon.com/turtle-food-Pet-Supplies/s?k=turtle+food&rh=n%3A2619533011">food link</a>
+    </div>
+
+    <img class="side-img" src="https://pbs.twimg.com/media/DvquVMXWoAEC4NC.jpg" alt="turt">
+  </div>
 </body>
 </html>
